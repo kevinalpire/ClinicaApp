@@ -24,9 +24,13 @@ Route::get('/users', [UserController::class, 'index'])->name('users.index');
 //DEMAS FUNCIONALIDADES DE USERS
 
 Route::get('/clinicas', [ClinicaController::class, 'index'])->name('clinicas.index');
+Route::get('/clinicas/create', [ClinicaController::class, 'create'])->name('clinicas.create');
+Route::post('/clinicas', [ClinicaController::class, 'store'])->name('clinicas.store');
 //DEMAS FUNCIONALIDADES DE CLINICAS
 
 Route::get('/cargos', [CargoController::class, 'index'])->name('cargos.index');
+Route::get('/cargos/create', [CargoController::class, 'create'])->name('cargos.create');
+Route::post('/cargos', [CargoController::class, 'store'])->name('cargos.store');
 //DEMAS FUNCIONALIDADES DE CARGOS
 
 require __DIR__.'/auth.php';

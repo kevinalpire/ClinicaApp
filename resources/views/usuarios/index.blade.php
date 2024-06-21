@@ -9,6 +9,14 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
+                <div class="flex gap-1">
+                    <div class="mb-4">
+                        <a class="p-2 bg-blue-900 hover:bg-blue-800 text-white rounded-lg" href="#">Añadir paciente</a>
+                    </div>
+                    <div class="mb-4">
+                        <a class="p-2 bg-green-900 hover:bg-green-800 text-white rounded-lg" href="#">Añadir personal</a>
+                    </div>
+                </div>
                     <table class="min-w-full divide-y divide-gray-200">
                         <thead>
                             <tr>
