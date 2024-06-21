@@ -16,7 +16,7 @@ class AdminSeeder extends Seeder
     {
 
         $clinica = Clinica::create([
-            "nombre" => "Clinica Administracion"
+            "nombre" => "ADMINISTRACION GENERAL"
         ]);
 
         User::create([

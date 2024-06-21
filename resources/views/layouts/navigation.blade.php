@@ -10,6 +10,15 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                        {{ __('Usuarios') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('clinicas.index')" :active="request()->routeIs('clinicas.index')">
+                        {{ __('Clinicas') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('cargos.index')" :active="request()->routeIs('cargos.index')">
+                        {{ __('Cargos') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -64,6 +73,15 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                {{ __('Usuarios') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('clinicas.index')" :active="request()->routeIs('clinicas.index')">
+                {{ __('Clinicas') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('cargos.index')" :active="request()->routeIs('cargos.index')">
+                {{ __('Cargos') }}
             </x-responsive-nav-link>
         </div>
 

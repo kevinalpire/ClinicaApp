@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Usuarios') }}
+            {{ __('Clinicas') }}
         </h2>
     </x-slot>
 
@@ -13,17 +13,17 @@
                         <thead>
                             <tr>
                                 <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Nombre</th>
-                                <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Correo electrónico</th>
-                                <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Clínica</th>
+                                <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Cantidad de usuarios</th>
+                                <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Cantidad de cargos</th>
                                 <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Acciones</th>
                             </tr>
                         </thead>
                         <tbody class="bg-white divide-y divide-gray-200">
-                            @foreach ($users as $user)
+                            @foreach ($clinicas as $clinica)
                             <tr>
-                                <td class="px-6 py-4 whitespace-no-wrap">{{ $user->name }}</td>
-                                <td class="px-6 py-4 whitespace-no-wrap">{{ $user->email }}</td>
-                                <td class="px-6 py-4 whitespace-no-wrap">{{ $user->clinica->nombre }}</td>
+                                <td class="px-6 py-4 whitespace-no-wrap">{{ $clinica->nombre }}</td>
+                                <td class="px-6 py-4 whitespace-no-wrap">{{ $clinica->cantidadUsuarios() }}</td>
+                                <td class="px-6 py-4 whitespace-no-wrap">{{ $clinica->cantidadCargos() }}</td>
                                 <td>
                                     <div class="flex justify-around">
                                         <button class="bg-blue-800 hover:bg-blue-700 p-2 rounded text-white">Editar</button>
